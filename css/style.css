@@ -124,6 +124,77 @@ a {
     opacity: 0.3;
 }
 
+/* EFFET STYLE */
+@keyframes light {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(80vh);
+        opacity: 0;
+    }
+}
+
+.light img {
+    width: 50px;
+    animation: light 7s linear infinite;
+    filter: blur(1px);
+}
+
+.light {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: absolute;
+    overflow: hidden;
+    top: -80px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.light img:nth-child(1) {
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.light img:nth-child(2) {
+    animation-delay: 4s;
+    width: 20px;
+}
+
+.light img:nth-child(3) {
+    animation-delay: 8s;
+    width: 35px;
+}
+
+.light img:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.light img:nth-child(5) {
+    animation-delay: 5s;
+    width: 60px;
+}
+
+.light img:nth-child(6) {
+    animation-delay: 1s;
+    width: 40px;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
 
